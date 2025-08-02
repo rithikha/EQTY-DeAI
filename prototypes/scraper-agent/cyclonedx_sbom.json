@@ -1,0 +1,447 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "serialNumber": "urn:uuid:42c165e6-fce6-438c-aefc-2ec0e77f2586",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-06-26T18:06:17.347826Z",
+    "tools": [
+      {
+        "vendor": "ACME Corp",
+        "name": "System Build Simulator",
+        "version": "1.0.0"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "rest-api-gateway@3.0.5",
+      "name": "rest-api-gateway",
+      "version": "3.0.5",
+      "description": "RESTful API gateway with rate limiting and request routing",
+      "supplier": {
+        "name": "ACME Data Systems"
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "bom-ref": "postgres-driver@14.2.1",
+      "name": "postgres-driver",
+      "version": "14.2.1",
+      "description": "PostgreSQL database driver for high-performance data operations",
+      "supplier": {
+        "name": "Database Corp"
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "PostgreSQL"
+          }
+        }
+      ],
+      "purl": "pkg:generic/databasecorp/postgres-driver@14.2.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "c6ff02daec1f61d565742c6f2afd711d957a5458199ab4554f0024171a9ebd31"
+        }
+      ],
+      "signature": {
+        "algorithm": "Ed25519",
+        "keyId": "database-corp-signing-key-2024",
+        "publicKey": {
+          "kty": "EC",
+          "crv": "Ed25519",
+          "x": "11qYAYKxCrfVS_7TyWQHOg7hcvPapiMlrwIaaPcHURo"
+        },
+        "value": "mFGSQ8YqxkUQmu3m6SHQ5EOMAi0RrFuLEFHFlUqEz58="
+      },
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1.0,
+          "methods": [
+            {
+              "technique": "binary-analysis",
+              "confidence": 1.0,
+              "value": "component verified through build process"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "library",
+      "bom-ref": "query-processor@1.8.3",
+      "name": "query-processor",
+      "version": "1.8.3",
+      "description": "High-performance SQL query processor and optimizer",
+      "supplier": {
+        "name": "Database Corp"
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:generic/databasecorp/query-processor@1.8.3",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "b2bdc87dc3fe8fafae5f5f1ea95666991f7934a2bc848c777cb47cba2e9a7a96"
+        }
+      ],
+      "signature": {
+        "algorithm": "Ed25519",
+        "keyId": "database-corp-signing-key-2024",
+        "publicKey": {
+          "kty": "EC",
+          "crv": "Ed25519",
+          "x": "11qYAYKxCrfVS_7TyWQHOg7hcvPapiMlrwIaaPcHURo"
+        },
+        "value": "KPdT8e/HxmVWW+3LTb4jXYo6DcGtpPgzhS3js0n1G9Y="
+      },
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1.0,
+          "methods": [
+            {
+              "technique": "binary-analysis",
+              "confidence": 1.0,
+              "value": "component verified through build process"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "library",
+      "bom-ref": "compliance-engine@2.0.1",
+      "name": "compliance-engine",
+      "version": "2.0.1",
+      "description": "Regulatory compliance and audit trail engine",
+      "supplier": {
+        "name": "ACME Data Systems"
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "purl": "pkg:generic/acmedatasystems/compliance-engine@2.0.1",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "9b65d5a92bd7c4ab58ec3803bfa8ff9b947e4fd90d19048cc2b382dd43007751"
+        }
+      ],
+      "signature": {
+        "algorithm": "Ed25519",
+        "keyId": "acme-data-systems-signing-key-2024",
+        "publicKey": {
+          "kty": "EC",
+          "crv": "Ed25519",
+          "x": "ZJTUtg4qJyEcmZZm6A2vqJyH8Lz9K2MlCdvYSJx4HUo"
+        },
+        "value": "6JgzEmY2r3WVU8E+OMCVTHVmpvQPPj2ucukjwbmrMKs="
+      },
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1.0,
+          "methods": [
+            {
+              "technique": "binary-analysis",
+              "confidence": 1.0,
+              "value": "component verified through build process"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "library",
+      "bom-ref": "db-service@3.1.0",
+      "name": "db-service",
+      "version": "3.1.0",
+      "description": "Database service layer with connection pooling and transaction management",
+      "supplier": {
+        "name": "Database Corp"
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:generic/databasecorp/db-service@3.1.0",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "363ed8951f93539cc37cfe6725f90c8fb19af239b98ec568566badb4b101b021"
+        }
+      ],
+      "signature": {
+        "algorithm": "Ed25519",
+        "keyId": "database-corp-signing-key-2024",
+        "publicKey": {
+          "kty": "EC",
+          "crv": "Ed25519",
+          "x": "11qYAYKxCrfVS_7TyWQHOg7hcvPapiMlrwIaaPcHURo"
+        },
+        "value": "QcJ7RaxroqzJN8Or28tDBjjiFRwIMOEcInu6Vl7SpWk="
+      },
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1.0,
+          "methods": [
+            {
+              "technique": "binary-analysis",
+              "confidence": 1.0,
+              "value": "component verified through build process"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "type": "application",
+      "bom-ref": "rest-api-gateway@3.0.5",
+      "name": "rest-api-gateway",
+      "version": "3.0.5",
+      "description": "RESTful API gateway with rate limiting and request routing",
+      "supplier": {
+        "name": "ACME Data Systems"
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "purl": "pkg:generic/acmedatasystems/rest-api-gateway@3.0.5",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "8c367972c03bff37ba5fc2fbe2777ec994347e7623706c9455870c5a7ceea955"
+        }
+      ],
+      "signature": {
+        "algorithm": "Ed25519",
+        "keyId": "acme-data-systems-signing-key-2024",
+        "publicKey": {
+          "kty": "EC",
+          "crv": "Ed25519",
+          "x": "ZJTUtg4qJyEcmZZm6A2vqJyH8Lz9K2MlCdvYSJx4HUo"
+        },
+        "value": "kMfTQxwI63Poce63dpfTDK80fZA5VYvW76yVtWsG7jc="
+      },
+      "evidence": {
+        "identity": {
+          "field": "purl",
+          "confidence": 1.0,
+          "methods": [
+            {
+              "technique": "binary-analysis",
+              "confidence": 1.0,
+              "value": "component verified through build process"
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "db-service@3.1.0",
+      "dependsOn": [
+        "postgres-driver@14.2.1",
+        "query-processor@1.8.3"
+      ]
+    },
+    {
+      "ref": "rest-api-gateway@3.0.5",
+      "dependsOn": [
+        "db-service@3.1.0",
+        "compliance-engine@2.0.1"
+      ]
+    }
+  ],
+  "declarations": {
+    "assessors": [
+      {
+        "bom-ref": "acme-security-team",
+        "thirdParty": false,
+        "organizationName": "ACME Data Systems Security Team",
+        "organizationEmail": "security@acmedatasystems.com",
+        "individual": {
+          "name": "Jane Security",
+          "email": "jane.security@acmedatasystems.com"
+        }
+      },
+      {
+        "bom-ref": "database-corp-auditor",
+        "thirdParty": true,
+        "organizationName": "Database Corp Quality Assurance",
+        "organizationEmail": "qa@databasecorp.com"
+      }
+    ],
+    "attestations": [
+      {
+        "summary": "Security assessment and vulnerability scan completed",
+        "assessor": "acme-security-team",
+        "map": [
+          {
+            "requirement": "vulnerability-scan",
+            "claims": [
+              {
+                "bom-ref": "vuln-scan-claim-001",
+                "target": "rest-api-gateway@3.0.5",
+                "predicate": "No critical vulnerabilities found",
+                "mitigationStrategies": [
+                  {
+                    "name": "Regular security updates",
+                    "description": "Automated dependency updates and security patches"
+                  }
+                ],
+                "reasoning": "Comprehensive vulnerability scan using OWASP ZAP and Snyk",
+                "evidence": [
+                  {
+                    "name": "Security Scan Report",
+                    "description": "Detailed vulnerability assessment report",
+                    "data": [
+                      {
+                        "name": "scan-results.json",
+                        "mediaType": "application/json",
+                        "encoding": "base64",
+                        "data": "eyJzY2FuX3Jlc3VsdCI6ICJwYXNzZWQiLCAidnVsbmVyYWJpbGl0aWVzIjogMH0="
+                      }
+                    ]
+                  }
+                ],
+                "signature": {
+                  "algorithm": "Ed25519",
+                  "keyId": "acme-data-systems-signing-key-2024",
+                  "publicKey": {
+                    "kty": "EC",
+                    "n": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxR8kLmQ...",
+                    "e": "AQAB"
+                  },
+                  "value": "XO5+o7XaE22V1Thxi3WOEfQmO5Yrj3n86KSd0TpsTsA="
+                }
+              }
+            ]
+          },
+          {
+            "requirement": "database-security",
+            "claims": [
+              {
+                "bom-ref": "db-security-claim-001",
+                "target": "db-service@3.1.0",
+                "predicate": "Database security controls validated",
+                "mitigationStrategies": [
+                  {
+                    "name": "Encryption at rest and in transit",
+                    "description": "All database communications and storage encrypted"
+                  },
+                  {
+                    "name": "Access controls",
+                    "description": "Role-based access control and audit logging"
+                  }
+                ],
+                "reasoning": "Security audit performed by certified database security specialists",
+                "evidence": [
+                  {
+                    "name": "Database Security Audit",
+                    "description": "Comprehensive database security assessment",
+                    "data": [
+                      {
+                        "name": "db-audit-report.pdf",
+                        "mediaType": "application/pdf",
+                        "encoding": "base64",
+                        "data": "JVBERi0xLjQKJdPr6eEKMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwo+PgplbmRvYmoKMiAwIG9iago8PAovVHlwZSAvUGFnZXMKL0tpZHMgWzMgMCBSXQovQ291bnQgMQo+PgplbmRvYmo="
+                      }
+                    ]
+                  }
+                ],
+                "signature": {
+                  "algorithm": "Ed25519",
+                  "keyId": "database-corp-signing-key-2024",
+                  "publicKey": {
+                    "kty": "EC",
+                    "n": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAwL6mQqK...",
+                    "e": "AQAB"
+                  },
+                  "value": "RM9OIe0I2NeZ0CFQUQKDxqmPEvZ73I4FD98FJXkfdGI="
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "summary": "Compliance verification for regulatory requirements",
+        "assessor": "acme-security-team",
+        "map": [
+          {
+            "requirement": "gdpr-compliance",
+            "claims": [
+              {
+                "bom-ref": "gdpr-claim-001",
+                "target": "compliance-engine@2.0.1",
+                "predicate": "GDPR compliance requirements satisfied",
+                "mitigationStrategies": [
+                  {
+                    "name": "Data privacy controls",
+                    "description": "Personal data processing and retention controls implemented"
+                  }
+                ],
+                "reasoning": "GDPR compliance assessment by certified data protection officer",
+                "evidence": [
+                  {
+                    "name": "GDPR Compliance Report",
+                    "description": "Data protection impact assessment and compliance verification",
+                    "data": [
+                      {
+                        "name": "gdpr-compliance.json",
+                        "mediaType": "application/json",
+                        "encoding": "base64",
+                        "data": "eyJnZHByX2NvbXBsaWFudCI6IHRydWUsICJkYXRhX3Byb3RlY3Rpb25faW1wYWN0X2Fzc2Vzc21lbnQiOiAiY29tcGxldGVkIn0="
+                      }
+                    ]
+                  }
+                ],
+                "signature": {
+                  "algorithm": "Ed25519",
+                  "keyId": "acme-data-systems-signing-key-2024",
+                  "publicKey": {
+                    "kty": "EC",
+                    "n": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxR8kLmQ...",
+                    "e": "AQAB"
+                  },
+                  "value": "ncs1ZUd+u1SpQ06KdrcwrC3PEPDmcptFtbPVzjhBrZc="
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

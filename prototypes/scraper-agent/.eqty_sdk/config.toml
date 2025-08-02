@@ -1,0 +1,6 @@
+store_all_blobs = false
+
+[cid_ignore]
+include_hidden_files = false
+gitignore = false
+include_symlinks = false
