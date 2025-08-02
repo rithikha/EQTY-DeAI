@@ -1,0 +1,30 @@
+{
+  "@context": "urn:cid:bafkr4iagb4u7jqlwqrftw4mn3l634wmgatmpvvzqgntgxaaerzljhggvdu",
+  "@id": "urn:cid:bagb6qaq6eagjxzaz66hpsnnnrnhshnwwp7jpt27gmcvnp2nx5v2gmli5bef5w",
+  "@type": "CredentialRegistration",
+  "credential": {
+    "@context": [
+      "https://www.w3.org/ns/credentials/v2",
+      "https://w3id.org/security/v2"
+    ],
+    "credentialSubject": {
+      "id": "urn:cid:bagb6qaq6ebelbsfal6pfyabpxnc7oofbh75hhzyzkmfubgzsoh7xfkifhyixs"
+    },
+    "id": "urn:uuid:29743ca9-3a63-4c69-808a-4d906e24fb7f",
+    "issuanceDate": "2025-07-21T07:09:11Z",
+    "issuer": "did:key:z6MkepuvAgx78VgVrvohRJACWZ9WDJivDWJPu2ugXSwBTW6z",
+    "proof": {
+      "created": "2025-07-21T07:09:11Z",
+      "jws": "eyJhbGciOiJFZERTQSIsImNyaXQiOlsiYjY0Il0sImI2NCI6ZmFsc2V9..ANEBYwye9uDxIfFhOk-n_yKObFkeKRunckUgFo36-G8_d6oVER4cMAEmI0ysgzM6oCudyKCIEJBwF2nMsG7YAA",
+      "proofPurpose": "assertionMethod",
+      "type": "Ed25519Signature2018",
+      "verificationMethod": "did:key:z6MkepuvAgx78VgVrvohRJACWZ9WDJivDWJPu2ugXSwBTW6z#z6MkepuvAgx78VgVrvohRJACWZ9WDJivDWJPu2ugXSwBTW6z"
+    },
+    "type": [
+      "VerifiableCredential"
+    ],
+    "validFrom": "2025-07-21T07:09:11Z"
+  },
+  "registeredBy": "did:key:z6MkepuvAgx78VgVrvohRJACWZ9WDJivDWJPu2ugXSwBTW6z",
+  "timestamp": "2025-07-21T07:09:11Z"
+}

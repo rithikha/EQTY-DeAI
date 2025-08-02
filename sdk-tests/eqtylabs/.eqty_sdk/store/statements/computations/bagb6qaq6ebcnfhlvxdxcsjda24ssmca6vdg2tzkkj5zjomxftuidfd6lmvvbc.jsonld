@@ -1,0 +1,15 @@
+{
+  "@context": "urn:cid:bafkr4iagb4u7jqlwqrftw4mn3l634wmgatmpvvzqgntgxaaerzljhggvdu",
+  "@id": "urn:cid:bagb6qaq6ebcnfhlvxdxcsjda24ssmca6vdg2tzkkj5zjomxftuidfd6lmvvbc",
+  "@type": "ComputationRegistration",
+  "input": [
+    "urn:cid:bafkr4iahkuecc5mj3ejpxu35bhnj56ncpjqe7eqwtu2vd36vq56of2deke",
+    "urn:cid:bafkr4ifbuvmiou2ts67umgicjeoio6iyrjo5d6gdsunt3hhw5s5bstuhwa"
+  ],
+  "output": [
+    "urn:cid:bafkr4iahkuecc5mj3ejpxu35bhnj56ncpjqe7eqwtu2vd36vq56of2deke"
+  ],
+  "operatedBy": "did:key:z6MkoD7UncgXwUk67rtJfrmGmU4tGEciQmpHwq87cMQUt2f4",
+  "registeredBy": "did:key:z6MkoD7UncgXwUk67rtJfrmGmU4tGEciQmpHwq87cMQUt2f4",
+  "timestamp": "2025-07-21T08:20:28Z"
+}

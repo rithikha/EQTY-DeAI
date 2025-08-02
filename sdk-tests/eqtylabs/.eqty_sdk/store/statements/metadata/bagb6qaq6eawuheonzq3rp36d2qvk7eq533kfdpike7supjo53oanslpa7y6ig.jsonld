@@ -1,0 +1,9 @@
+{
+  "subject": "did:key:z6MkqVU9auoCH5RPKoMwnKPnLw8qV4RVojVCqG7Sb4AqbtS7",
+  "@context": "urn:cid:bafkr4iagb4u7jqlwqrftw4mn3l634wmgatmpvvzqgntgxaaerzljhggvdu",
+  "@id": "urn:cid:bagb6qaq6eawuheonzq3rp36d2qvk7eq533kfdpike7supjo53oanslpa7y6ig",
+  "@type": "MetadataRegistration",
+  "registeredBy": "did:key:z6MkqVU9auoCH5RPKoMwnKPnLw8qV4RVojVCqG7Sb4AqbtS7",
+  "metadata": "urn:cid:baga6yaq6edwmwf2nin32nqecbms5g72zuhsrgbn2niznhkqguaven62w5yr6c",
+  "timestamp": "2025-07-21T08:03:10Z"
+}

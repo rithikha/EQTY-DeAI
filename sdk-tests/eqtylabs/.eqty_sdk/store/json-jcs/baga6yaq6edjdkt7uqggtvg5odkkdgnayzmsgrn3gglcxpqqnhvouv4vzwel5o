@@ -1,0 +1,6 @@
+{
+    "description": "My description for data",
+    "foo": "bar",
+    "assetType": "Dataset",
+    "name": "My data"
+}

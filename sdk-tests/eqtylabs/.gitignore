@@ -1,0 +1,17 @@
+
+# DO NOT ignore these file types
+!*.py
+!*.json
+!*.txt
+!*.rtf
+
+# DO NOT track Python env files
+bin/
+lib/
+include/
+python3.13/
+site-packages/
+pyvenv.cfg
+.venv/
+__pycache__/
+*.pyc
