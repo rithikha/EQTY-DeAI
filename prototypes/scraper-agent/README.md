@@ -59,9 +59,13 @@ All integrity statements (datasets, computation, signer identity) are exported t
 ### 6. Optional cleanup  
 The local integrity store is wiped after the manifest is created, so each run stays clean and reproducible.
 
+
+This pattern can be extended to support batch runs, longer input models, document classification/versioning, workflows, etc. Every output can be backed by cryptographically signed, queryable provenance.
+
 ---
 ## Lineage Explorer Visualization
 
+
+
 ---
 
-This pattern can be extended to support batch runs, longer input models, document classification, or regulatory workflows. Every output can be backed by cryptographically signed, queryable provenance.
