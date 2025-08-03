@@ -51,7 +51,7 @@ async function main() {
     // Wrap everything in an executor that will maintain memory and handles tool usage
     const agentExecutor = new AgentExecutor({
         agent,
-        tools,
+        tools,  // agent will check tools based off user query needs and execue it usign hedera account, returns result
     });
 
     const response = await agentExecutor.invoke({ input: "what's my balance?" });
