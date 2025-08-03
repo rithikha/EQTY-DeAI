@@ -41,7 +41,7 @@ A metadata block is constructed that includes:
 - The model name and versions (transformers, torch, Python)
 - Agent run ID and timestamp
 - Summary parameters (`max_length`, `min_length`)
-This metadata is bundled into the final output.
+This metadata is bundled into another variable called output that contains pointers (in the form of CIDs) to the larger metadata objects.
 
 ###  4. EQTY signing and registration  
 - A new ED25519 keypair is created via `Signer.new()` and made active.
@@ -57,10 +57,7 @@ All integrity statements (datasets, computation, signer identity) are exported t
 - Shared as a portable provenance bundle
 
 ### 6. Optional cleanup  
-The local integrity store is wiped after the manifest is created, so each run stays clean and reproducible.
-
-
-This pattern can be extended to support batch runs, longer input models, document classification/versioning, workflows, etc. Every output can be backed by cryptographically signed, queryable provenance.
+The local integrity store is wiped after the manifest is created. Comment out if needed.
 
 ---
 ## Lineage Explorer Visualization
