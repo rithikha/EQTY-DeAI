@@ -8,14 +8,14 @@ This script demonstrates a very simple agentic AI provenance pipeline: it scrape
 ## Run It Locally 
 
 ```bash
-# 0 Clone & enter
+# Clone Repo
 git clone <repo-url> && cd scraper-agent
 
-# 1 Create Python 3.10+ venv
+# Activate Python 3.10+ venv
 python -m venv .venv
 source .venv/bin/activate       
 
-# 2 Install EQTY SDK (private) and dependencies
+# Install EQTY SDK (private) and dependencies
 export USER='<pypi-user>'           # obtain from EQTY team
 export PASSWORD='<pypi-pass>'
 export REPO=http://$USER:$PASSWORD@eqty-pypi.westus2.cloudapp.azure.com/simple
@@ -25,6 +25,8 @@ pip install --extra-index-url "$REPO" \
             --trusted-host eqty-pypi.westus2.cloudapp.azure.com \
             eqty_sdk
 pip install requests beautifulsoup4 lxml transformers torch
+
+'''bash
 
 ## What's Happening
 
