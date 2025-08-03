@@ -22,6 +22,7 @@ async function main() {
         PrivateKey.fromStringDer(process.env.PRIVATE_KEY),
     );
 
+    // loads pre-built LangChain tools for common Hedera actions, like: getBalance, createAccount, transferHbar
     const hederaAgentToolkit = new HederaLangchainToolkit({
         client,
         configuration: {
@@ -29,25 +30,25 @@ async function main() {
         },
     });
 
-    // Load the structured chat prompt template
+    // Load the structured chat prompt template to setup hwo the langchain agent will think
     const prompt = ChatPromptTemplate.fromMessages([
-        ['system', 'You are a helpful assistant'],
-        ['placeholder', '{chat_history}'],
-        ['human', '{input}'],
-        ['placeholder', '{agent_scratchpad}'],
+        ['system', 'You are a helpful assistant'], // backgroudn instruction for the agent
+        ['placeholder', '{chat_history}'], // past conversation history
+        ['human', '{input}'], // user message 
+        ['placeholder', '{agent_scratchpad}'], // agent internal reasoning logged here
     ]);
 
     // Fetch tools from toolkit
     const tools = hederaAgentToolkit.getTools();
 
-    // Create the underlying agent
+    // Create the underlying agent with the previous variables
     const agent = createToolCallingAgent({
         llm,
         tools,
         prompt,
     });
 
-    // Wrap everything in an executor that will maintain memory
+    // Wrap everything in an executor that will maintain memory and handles tool usage
     const agentExecutor = new AgentExecutor({
         agent,
         tools,
