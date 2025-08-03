@@ -26,7 +26,7 @@ pip install --extra-index-url "$REPO" \
             eqty_sdk
 pip install requests beautifulsoup4 lxml transformers torch
 
-'''bash
+```
 
 ## What's Happening
 
