@@ -1,4 +1,4 @@
-# Federal-Register → Summary Provenance Demo
+#  Provenance Demo - Federal Register Log & Summary
 
 Prototype to show how **EQTY** captures raw data, AI output, and full lineage in tamper-evident CIDs using Federal Registry Data.
 This script demonstrates a very simple agentic AI provenance pipeline: it scrapes data from the federal registry site (URL hardcoded), applies an AI model to generate a summary, and records the full lineage of that process using EQTY. Each step produces cryptographically signed artefacts that can be independently verified and traced through the outputes manifest.json file containing verificable credentials and visualized in EQTY's lineage explorer.
