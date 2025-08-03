@@ -1,0 +1,8 @@
+{
+  "@context": "urn:cid:bafkr4iagb4u7jqlwqrftw4mn3l634wmgatmpvvzqgntgxaaerzljhggvdu",
+  "@id": "urn:cid:bagb6qaq6eb2g2ycae763ce7jke5yqlpdjibysbg25oj2atnjhsbuc4w3yhdxe",
+  "@type": "DataRegistration",
+  "registeredBy": "did:key:z6MkmdjMLYqadXZ4E9ZJTU5C4fvJZoqxD55tXSn8NgQga8iw",
+  "data": "urn:cid:bafkr4iew7iwwstqqrbvfjcydciv4bojlhjvscw2oatc4xyhg7f7sroko6e",
+  "timestamp": "2025-08-03T00:50:59Z"
+}
