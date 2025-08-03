@@ -1,9 +1,0 @@
-{
-  "subject": "urn:cid:bafkr4ieldlaochzraoumll5af4h7mscw5djsg24kbgjxke7zluuhloghoi",
-  "@context": "urn:cid:bafkr4iagb4u7jqlwqrftw4mn3l634wmgatmpvvzqgntgxaaerzljhggvdu",
-  "@id": "urn:cid:bagb6qaq6ea5gkcyzawfzry4nnajprm3cczpadstbkck5pieblvcywibzdoflg",
-  "@type": "MetadataRegistration",
-  "registeredBy": "did:key:z6Mkik3HTZvwd2q2fdmwkYSzkrBbYEYVRWSCsLDaJj4BwuG8",
-  "metadata": "urn:cid:baga6yaq6ec4fihxssnjyranchr63qubanygexemzi6fgmywtmral3uyggpigy",
-  "timestamp": "2025-08-03T01:04:35Z"
-}

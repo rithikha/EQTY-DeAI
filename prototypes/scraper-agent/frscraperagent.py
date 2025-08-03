@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import transformers
 from transformers import pipeline
 import torch
-from eqty_sdk import init, Did, Dataset, Signer, SIGNER_ALGORITHMS, set_active_signer
+from eqty_sdk import init, Did, Dataset, Signer, SIGNER_ALGORITHMS, set_active_signer, Computation, generate_manifest,  purge_integrity_store
 
 
 
@@ -104,10 +104,46 @@ if __name__ == "__main__":
         description="Federal Register issue and web scraper agent provenance",
     )
 
+    # Add computation provanence for summary generation
 
-    # Add computation provanence
+    fulltext_ds = Dataset.from_object(
+        full_text,
+        name="FR 2025-07-28 full extraction of text",
+        descriptions=" Extracted Federal Register from XML pulled on 2025-08-02"
+    )
 
-    print("Stored dataset CID:", ds.cid)
+    summary_ds = Dataset.from_object(
+        summary,
+        name="FR 2025-07-28 summary",
+        description="summary of FR",
+        model="sshleifer/distilbart-cnn-12-6",
+        run_id=RUN_ID
+    )
+
+    comp = (
+        Computation
+        .new(name="fr-summariser v0.1 run",
+            description="XML ➜ plain text ➜ BART summary on 2025-08-02",
+            model="sshleifer/distilbart-cnn-12-6",
+            run_id=RUN_ID,
+            fr_outputs=ds.cid
+        )
+        .add_input_cid(fulltext_ds.cid)   # input A, extracted text from xml
+        .add_output_cid(summary_ds.cid)   # output B, summary generated
+    )
+                 
+    comp.finalize() # finalize returns none. builder pattern to assemble/puttign it all together, simply makign a json claim
+
+    
+computation_details = comp.__getstate__()
+print(computation_details)
+
+generate_manifest("./manifest.json")
+purge_integrity_store()
+
+
+
+
 
 
 
