@@ -15,3 +15,5 @@ pyvenv.cfg
 .venv/
 __pycache__/
 *.pyc
+sdk-tests/eqtylabs/PyPI_UP.rtf
+
