@@ -65,7 +65,7 @@ This pattern can be extended to support batch runs, longer input models, documen
 ---
 ## Lineage Explorer Visualization
 
+<img width="1685" height="970" alt="Screenshot 2025-08-02 at 8 55 46 PM" src="https://github.com/user-attachments/assets/303413e4-afec-4c4c-af57-445868a3832f" />
+<img width="1686" height="963" alt="Screenshot 2025-08-02 at 8 55 54 PM" src="https://github.com/user-attachments/assets/b502fdfd-fdcf-4828-9764-e17f5ee0fffb" />
 
-
----
 
